@@ -1,16 +1,13 @@
 # 웹 프로그래밍
 
-1. [웹 프로그래밍 기초](01/README.md)
-2. [리눅스 기본](02/README.md)
-3. [파이썬 기본](03/README.md)
-4. flask 사용법
-5. jinja2 사용법
-6. 웹 기초 - html, css, javascript
-7. Mobile App WebView
-8. 웹 기초 - json
-9. Mobile App json parsing
-10. BeautifulSoup
-11. mysql - 설치 및 사용법
-12. SQLAlchemy 사용법
-13. git 사용법
-14. 도메인 등록
+1. [웹 프로그래밍 기초](01/README.md): 서버 클라이언트 개념, IP, port 개념 등 웹 프로그래밍을 위한 기초 지식을 학습합니다.
+2. [리눅스 기본](02/README.md): 웹 서버를 설치하고 운영하기 위한 리눅스 기초 지식을 학습합니다.
+3. [파이썬 기본](03/README.md): 파이썬 웹 서버를 생성하기 위해 파이썬 기초에 대해서 배웁니다.
+4. [flask 사용법](04/README.md): 파이썬 웹 서버를 만들어 보고 동작 방식을 이해합니다. (백엔드)
+5. Mobile 연동: 모바일과 웹 백엔드를 연동하는 방법에 대해서 알아 봅니다.
+6. [웹 프론트 기초](06/README.md): 웹 프론트에서 사용하는 기술에 대해서 알아 봅니다.
+7. [웹 크롤링](07/README.md)BeautifulSoup
+8. mysql - 설치 및 사용법
+9. SQLAlchemy 사용법
+10. git 사용법
+11. 도메인 등록

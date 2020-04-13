@@ -26,7 +26,7 @@ ssh 프로토콜을 이용하여 접속. ssh도 클러이언트, 서버 구조�
 2. Session 버튼 클릭
 3. SSH 클릭
 4. Remote host
-5. Specifiy username
+5. Specifiy username: ubuntu
 6. OK
 7. 세션 더블클릭
 
@@ -44,10 +44,6 @@ ssh 프로토콜을 이용하여 접속. ssh도 클러이언트, 서버 구조�
 
 ### 프로세스
 프로그램을 실행하면 프로세스라는 것이 생성된다. 이것은 프로그램이 메모리 위에 로딩된 상태로 볼 수 있다.
-
-### 실행 파일 (executable file)
-파일 중에 실행할 수 있는 파일이 존재한다. 윈도우의 exe 파일과 유시하게 프로그램을 실행시킬 수 있다. 이것을 실행 파일이라고 부른다.
-
 
 
 ## 리눅스 기초 명령어
@@ -202,13 +198,19 @@ tar -xvf test_dir.tar
 date
 ```
 
-### bash
+### 실행자와 실행 파일 (executor & executable file)
+파일 중에 실행할 수 있는 파일이 존재한다. 윈도우의 exe 파일과 유시하게 프로그램을 실행시킬 수 있다. 이것을 실행 파일이라고 부른다. (executable file)
+그리고 그 실행 파일을 실행하는 주체를 실행자라고 부른다. (executor)
+
+- executor: `bash`
+- executable file: shell script (`.sh`)
 
 실행 파일 실행
 
 ```bash
 echo "date; echo abc" > date.sh
 
+# 실행자 실행파일
 bash date.sh
 ```
 
@@ -280,7 +282,13 @@ my_env=123 bash env-test.sh
 
 ```bash
 my_env=123
+export my_env=123
 echo $abc
+```
+
+```bash
+# 전체 환경변수 출력
+printenv
 ```
 
 ### tmux 사용법
@@ -340,6 +348,46 @@ tmux a
 exit
 ```
 
+## Cron 사용
+
+cron이란 특정 주기를 가지고 특정 스크립트를 실행 시켜주는 데몬입니다.
+
+*데몬이란?* 백그라운드에서 실행되면서 지속적으로 실행되고 있는 프로세스
+
+```bash
+# pseudo code
+while forever:
+    do_something();
+    sleep();
+```
+
+crontab이라는 명령을 이용하여 cron 설정을 변경해 줍니다.
+
+
+```bash
+* * * * * PATH_TO_EXECUTE
+```
+
+![](https://www.itzgeek.com/wp-content/uploads/2017/10/Crontab-Examples-in-Linux-Crontab-Time-Format-1-1024x534.png)
+
+
+```bash
+# vim /home/ubuntu/date.sh
+
+date
+echo abc
+```
+
+```bash
+chmod +x date.sh
+crontab -e
+
+* * * * * /home/ubuntu/date.sh >> /home/ubuntu/date.log
+```
+
+```bash
+tail -f date.log
+```
 
 ## nginx 설치해보기
 
@@ -359,14 +407,11 @@ curl localhost
 ```
 # 내 마음대로 바꾸기
 sudo vim /var/www/html/index.nginx-debian.html
-
 ```
 
 
+### :trophy: Do it more
 
+다음 역할을 하는 `myscript.sh` 를 만들어 봅시다.
 
-
-
-nslookup
-systemctl
-crontab
+매 1분마다 현재 실행되고 있는 프로세스들의 리스트를 nginx 웹 페이지에 뿌려주는 스크립트 생성
