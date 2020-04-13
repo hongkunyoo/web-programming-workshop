@@ -1,8 +1,8 @@
 # 웹 프로그래밍
 
-1. 웹 프로그래밍 기초 (클라이언트 - 서버, IP, PORT, http)
-2. 리눅스 기본 - nginx 설치해보기
-3. 파이썬 설치 및 기본 (python, pip install, sys.argv, 파이썬 자료형, config 설정 YAML)
+1. [웹 프로그래밍 기초](01/README.md)
+2. [리눅스 기본](02/README.md)
+3. [파이썬 기본](03/README.md)
 4. flask 사용법
 5. jinja2 사용법
 6. 웹 기초 - html, css, javascript
