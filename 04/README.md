@@ -1,6 +1,36 @@
-# flask
+# 웹 백엔드
 
-flask는 파이썬 패키지 중 하나로 손쉽게 앱 서버를 만들 수 있게 해줍니다.
+웹 백엔드는 서버 로직을 구현하는 메인 컴포넌트입니다. web 서버, DB 서버와 통신하여 서버의 중심 역할을 담당합니다. 웹 백엔드의 구현체는 다양하게 있습니다. 언어에 따라서 다르고 같은 언어 안에서도 다양하게 나뉩니다. 몇가지 예시를 보겠습니다.
+
+- java
+	- Servlet
+	- Spring
+	- Struts
+- ruby
+	- Ruby On Rails
+- python
+	- *Flask*
+	- *Django*
+- php
+	- Laravel
+	- CodeIgniter
+- nodeJs
+	- Express
+	- AdonisJs
+
+본 워크샵에서는 [flask](https://flask.palletsprojects.com/en/1.1.x/)를 사용할 예정입니다. 
+
+#### flask 장점
+- 가볍다
+- 배우기 쉽다.
+- 기능이 간단하다.
+- 작은 웹앱에 적당하다.
+
+#### flask 단점
+파이썬의 또 다른 웹 프레임워크 강자 Django(장고)와 비교하여
+- 기능이 빈약하다.
+
+하지만 본 워크샵에서 실습하기에 flask도 충분하기에 배우기 쉬운 flask로 사용할 예정입니다. 그리고 flask를 배우고 Django를 배우면 무척 쉽게 옮겨갈 수 있습니다.
 
 ## flask 설치
 
@@ -299,6 +329,15 @@ if __name__ == '__main__':
 ```
 
 
-### :trophy: Do it more
+### :trophy: Do it more #1
 
 api.json을 조금 더 범용성 있게 바꿀 순 없을까요?
+
+
+### :trophy: Do it more #2
+
+HTTP Basic Auth를 이용하여 사용자 로그인 페이지를 구현해 봅시다.
+
+참고 사이트
+- https://httpbin.org/
+- https://reqbin.com/
