@@ -6,7 +6,7 @@
 4. [flask 사용법](04/README.md): 파이썬 웹 서버를 만들어 보고 동작 방식을 이해합니다. (백엔드)
 5. Mobile 연동: 모바일과 웹 백엔드를 연동하는 방법에 대해서 알아 봅니다.
 6. [웹 프론트 기초](06/README.md): 웹 프론트에서 사용하는 기술에 대해서 알아 봅니다.
-7. [웹 크롤링](07/README.md)BeautifulSoup
+7. [웹 크롤링](07/README.md): BeautifulSoup
 8. mysql - 설치 및 사용법
 9. SQLAlchemy 사용법
 10. git 사용법
