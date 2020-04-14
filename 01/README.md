@@ -24,12 +24,14 @@
 
 ### 웹, 앱, DB 서버
 
-![](https://www.ibm.com/support/knowledgecenter/SSEQTP_8.5.5/com.ibm.websphere.base.doc/ae/images/inst_top_was_nd_sa_1machine_en.gif)
+![](https://runestone.academy/runestone/books/published/webfundamentals/_images/WebArch.svg)
 
 - 웹 서버: 실제 클라이언트 브라우저에서 스크립트가 실행되나 앱 서버에서 스크립트를 제공함
 - 앱 서버: 백엔드 로직이 동작하는 서버
 - DB 서버: 데이터를 저장하는 서버 (RDB, mongoDB 등)
 
+
+## 네트워크
 
 ### IP, PORT
 
@@ -41,14 +43,12 @@ PORT: 동일한 호스트 내에서 특정 프로세스를 찾는 식별자
 - Private IP: 특정 네트워크 안에서만 접근 가능한 IP
 - Public IP: 전세계 어디서나 접근 가능한 IP
 
-
 ### HTTP란?
 
-1. 네트워크 프로토콜 중에 하나
-2. http 뿐만 아니라 samba, nfs, sftp 등 다른 프로토콜도 많지만 가장 많이 알려진 프로토콜
-3. text 기반 (다른 프로토콜은 Request와 Response가 텍스트가 아닌 binary (01010110) 혹은 hex (0FFA9C) 인 경우도 있지만 http는 Request와 Response 둘다 텍스트임)
-4. Header와 Body로 이루어짐
-5. http method (혹은 verb - 동사)
+1. 네트워크 [*프로토콜*](protocol.md) 중에 하나
+2. format: *text 기반*
+3. Header와 Body로 이루어짐
+4. http method (혹은 verb - 동사)
 	- GET
 	- POST
 	- PUT
